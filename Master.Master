@@ -1,0 +1,180 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.Master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--母版页CSS--%>
+    <link rel="stylesheet" href="css/MasterUpdate.css" runat="server" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:white;">
+    <form id="form1" runat="server">
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+
+        <div>
+            <table style="width: 1141px;" class="table1">
+                <tr>
+                    <!--首页标题栏各按钮面板-->
+                    <td>
+
+                        <asp:Panel ID="pnlTitle" runat="server" CssClass="pnlTitle">
+                            <!--返回首页button-->
+                            <asp:LinkButton ID="cmdFirstPage" PostBackUrl="MainPage.aspx" runat="server" CssClass="cmdFirstPage" Text="首页" Font-Underline="false"></asp:LinkButton>
+
+                            <!--利用ScriptManager/UpdatePanel异步刷新用户名-->
+                            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+                            <asp:UpdatePanel ID="UpdatePanel_UserName" UpdateMode="Conditional" runat="server">
+                                <ContentTemplate>
+                                    <!--两个label用以显示登录用户的用户名-->
+                                    <asp:Label ID="lblUserName" runat="server" CssClass="lblUserName" Text="欢迎,"></asp:Label>
+                                    <asp:Label ID="lblNameInput" runat="server" CssClass="lblNameInput" Text=""></asp:Label>
+                                    
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <!--利用ScriptManager/UpdatePanel异步刷新用户名-->
+                            <%--我的购物车及我的订单两个按钮--%>
+                            <asp:LinkButton ID="lkbShoppingCart" runat="server" CssClass="lkbUserOperation" Text="我的购物车" OnClick="lkbShoppingCart_Click" Font-Underline="False"></asp:LinkButton>&nbsp;
+                            <asp:LinkButton ID="lkbUserOrder" runat="server" CssClass="lkbUserOperation" Text="我的订单" OnClick="lkbUserOrder_Click" Font-Underline="False"></asp:LinkButton>
+                            <!--登录、注册、退出三个button-->
+                            <%--登录按钮及其hover中展示页面--%>
+                            <input type="button" value="登录" id="cmdLogin" />
+                            <asp:Panel ID="pnlLoginDown" runat="server" CssClass="pnlLoginDown">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+
+                                <!--利用ScriptManager/UpdatePanel异步刷新登陆框-->
+                                <asp:UpdatePanel ID="UpdatePanel_LoginState" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="True">
+                                    <ContentTemplate>
+                                        &nbsp;<asp:Label ID="lblLoginName" runat="server" CssClass="lblLoginFont" Text="用户名："></asp:Label>
+                                        <asp:TextBox ID="txtLoginName" runat="server" CssClass="txtLoginKuang"></asp:TextBox><br />
+                                        <br />
+                                        &nbsp;<asp:Label ID="lblLoginPwd" runat="server" CssClass="lblLoginFont" Text="密码："></asp:Label>&nbsp;
+                                <asp:TextBox ID="txtLoginPwd" runat="server" CssClass="txtLoginKuang" TextMode="Password"></asp:TextBox><br />
+                                        <br />
+                                        <!--显示登陆状态-->
+                                        &nbsp;<asp:Label runat="server" ID="lblLoginState" Text="测试" ForeColor="white"></asp:Label>
+                                        <br />
+                                        <br />
+                                        &nbsp;<asp:Button ID="cmdLoginNow" runat="server" CssClass="cmdLoginNow" Text="登     录" OnClick="cmdLoginNow_OnClick" /><br />
+                                        <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="lkbForPwd" runat="server" CssClass="lkbForPwd" Text="忘记密码？找回密码"></asp:LinkButton>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                                <!--利用ScriptManager/UpdatePanel异步刷新登陆框-->
+
+                            </asp:Panel>
+                            <%--注册按钮--%>
+                            <asp:LinkButton ID="lkbRegister" runat="server" CssClass="lkbRegister" Text="注册" Font-Underline="false" OnClick="lkbRegister_Click"></asp:LinkButton>
+
+                            <%--退出按钮--%>
+                            <!--利用ScriptManager/UpdatePanel异步刷新退出按钮-->
+                            <asp:UpdatePanel ID="UpdatePanel_QuitButton" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <asp:LinkButton ID="lkbQuit" runat="server" CssClass="lkbQuit" Text="退出" Font-Underline="false" OnClick="lkbQuit_OnClick"></asp:LinkButton>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <!--利用ScriptManager/UpdatePanel异步刷新退出按钮-->
+                        </asp:Panel>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--首页第二栏面板-->
+                        <asp:Panel ID="pnlLogo" runat="server" CssClass="pnlLogo" BackImageUrl="~/Image/题头暂存2.jpg">                          
+                            <!--search面板，包括搜索框、两个搜索button-->
+                            <asp:Panel ID="pnlSearch" runat="server" CssClass="pnlSearch">
+                                <%--搜索框--%>
+                                <asp:TextBox ID="txtSearch" runat="server" CssClass="txtSearch"></asp:TextBox>
+                                <%--模糊搜索按钮--%>
+                                <asp:LinkButton ID="cmdSearch" runat="server" CssClass="cmdSearch" Text="搜索" OnClick="cmdSearch_OnClick" Font-Underline="false" />
+                                <%-- 高级搜索按钮--%>
+                                <input type="button" id="cmdGSearch" value="高级搜索" />
+                                <!--高级搜索条件展示面板-->
+                                <asp:Panel ID="pnlGSearch" runat="server" CssClass="pnlGSearch">
+
+
+                                    <asp:UpdatePanel ChildrenAsTriggers="True" UpdateMode="Conditional" runat="server">
+                                        <ContentTemplate>
+                                            <%--书名及书名输入--%>
+                                            <asp:Label ID="lblBookN" runat="server" Text="书名：" CssClass="lblBookS0"></asp:Label>
+                                            <asp:TextBox ID="txtBookN" runat="server" Text="" CssClass="txtBookS0"></asp:TextBox>
+                                            <%--书号及书号输入--%>
+                                            <asp:Label ID="lblBookNo" runat="server" Text="书号：" CssClass="lblBookS1"></asp:Label>
+                                            <asp:TextBox ID="txtBookNo" runat="server" Text="" CssClass="txtBookS1"></asp:TextBox>
+                                            <%--作者及作者姓名输入--%>
+                                            <asp:Label ID="lblAuthorN" runat="server" Text="作者：" CssClass="lblBookS2"></asp:Label>
+                                            <asp:TextBox ID="txtAuthorN" runat="server" Text="" CssClass="txtBookS2"></asp:TextBox>
+                                            <%--出版社及出版社名输入--%>
+                                            <asp:Label ID="lblPublisherN" runat="server" Text="出版社：" CssClass="lblBookS3"></asp:Label>
+                                            <asp:TextBox ID="txtPublisherN" runat="server" Text="" CssClass="txtBookS3"></asp:TextBox>
+                                            <br />
+                                            <!--用户搜索条件状态检测-->
+                                            <asp:Label runat="server" ID="lblSearchConditionSate" Text="测试" ForeColor="white"></asp:Label>
+                                            <%--高级搜索开始搜索按钮--%>
+                                            <asp:LinkButton ID="lkbGStart" runat="server" Text="开始搜索" CssClass="lkbGStart" Font-Underline="false" OnClick="lkbGStart_OnClick"></asp:LinkButton>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </asp:Panel>
+                            </asp:Panel>
+                        </asp:Panel>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="divFooter" class="divFooter">
+
+          
+            
+            <asp:Label ID="lblFooterLine0" runat="server" CssClass="lblFooterLine0"></asp:Label><br />
+           
+           
+                <asp:Panel ID="pnlFooterButton" runat="server" CssClass="pnlFooterButton">
+            <table class="tbFooter"><tr>
+                <td>
+            <asp:Label ID="Label1" Text="友情链接：" runat="server" CssClass="lblFooter"></asp:Label>
+            </td>
+                <td>
+            <asp:LinkButton ID="lkbFooter0" runat="server" CssClass="lkbFooter" Text="百度" PostBackUrl="http://www.baidu.com"></asp:LinkButton>&nbsp;
+         </td>
+                <td>
+                <asp:LinkButton ID="lkbFooter1" runat="server" CssClass="lkbFooter"  Text="阿里巴巴" PostBackUrl="http://www.1688.com"></asp:LinkButton>
+           </td>
+                <td>
+                <asp:LinkButton ID="lkbFooter2" runat="server"   CssClass="lkbFooter"  Text="土豆视频" PostBackUrl="http://www.tudou.com"></asp:LinkButton>
+            </td>
+                <td>
+                <asp:LinkButton ID="lkbFooter3" runat="server"   CssClass="lkbFooter" Text="爱奇艺" PostBackUrl="http://www.iqiyi.com"></asp:LinkButton>
+            </td>
+                <td>
+                <asp:LinkButton ID="lkbFooter4" runat="server"  CssClass="lkbFooter"  Text="京东商城" PostBackUrl="http://www.jd.com"></asp:LinkButton>
+         </td>
+                <td>
+                <asp:LinkButton ID="lkbFooter5" runat="server"  CssClass="lkbFooter"  Text="淘宝网" PostBackUrl="http://www.taobao.com"></asp:LinkButton>
+            </td>
+          </tr>
+            </table>
+                    </asp:Panel><br /><br />
+              
+            <asp:Label ID="lblFooterline1" runat="server" CssClass="lblFooterLine1"></asp:Label><br />
+            
+                
+                    <asp:Label ID="lblAnnounce" runat="server" CssClass="lblAnnounce" Text="版权声明：时雨书店工作小组"></asp:Label>
+        
+      </div>
+    </form>
+
+</body>
+</html>

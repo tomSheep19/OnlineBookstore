@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ManagerManage.Master.cs" Inherits="ManagerManage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/Manage.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="PBack" runat="server" CssClass="PBack">
+
+                <!--后台管理系统抬头-->
+                <asp:Panel ID="Title" runat="server" CssClass="P_Title">
+                    <br />
+                    &nbsp;&nbsp;<br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!--链接到首页-->
+                    <asp:LinkButton ID="cimdBackMainPage"  runat="server" CssClass="TButton" OnClick="cimdBackMainPage_Click">≡首页≡</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!--管理员等级-->
+                    <asp:Label ID="lblManagerRank" runat="server" Text="[管理员]：" CssClass="TLabel"></asp:Label>
+
+
+                    <!--管理员用户名-->
+                    <asp:Label ID="lblManagerName" runat="server" Text="[管理员用户名]" CssClass="TLabel"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!--退出管理员账号-->
+                    <asp:LinkButton ID="Exit" runat="server" CssClass="TButton" OnClick="Exit_Click">≡退出≡</asp:LinkButton>
+
+
+
+                </asp:Panel>
+
+
+                <!--左侧功能栏-->
+                <asp:Panel ID="P_Left" runat="server" CssClass="p_Left">
+                    <asp:Panel ID="P_Function" runat="server" CssClass="P_Function">
+                        <!--功能栏，点击跳转对应功能模块-->
+
+
+                        <asp:LinkButton ID="lbOrderManage" runat="server" OnClick="lbOrderManage_Click" CssClass="FunctionButton">订单管理</asp:LinkButton>
+                        <asp:LinkButton ID="lbUserManage" runat="server" OnClick="lbUserManage_Click" CssClass="FunctionButton">用户管理</asp:LinkButton>
+                        <asp:LinkButton ID="lbBookManage" runat="server" OnClick="lbBookManage_Click" CssClass="FunctionButton">书籍管理</asp:LinkButton>
+
+                    </asp:Panel>
+
+                    <asp:Panel ID="P_BookCategory" runat="server" Visible="False" CssClass="P_BookCategory">
+                        <!--书籍分类，点击列出对应书籍-->
+                        <asp:LinkButton ID="lbEducation" runat="server" CssClass="MCateButton" OnClick="lbEducation_Click">教育</asp:LinkButton>
+                        <asp:LinkButton ID="lbArt" runat="server" CssClass="MCateButton" OnClick="lbArt_Click">文艺</asp:LinkButton>
+                        <asp:LinkButton ID="lbScience" runat="server" CssClass="MCateButton" OnClick="lbScience_Click">科技</asp:LinkButton>
+                        <asp:LinkButton ID="lbLife" runat="server" CssClass="MCateButton" OnClick="lbLife_Click">生活</asp:LinkButton>
+                        <asp:LinkButton ID="lbHumanity" runat="server" CssClass="MCateButton" OnClick="lbHumanity_Click">人文社科</asp:LinkButton>
+                        <asp:LinkButton ID="lbJuvenile" runat="server" CssClass="MCateButton" OnClick="lbJuvenile_Click">少儿读物</asp:LinkButton>
+                    </asp:Panel>
+                </asp:Panel>
+                <asp:Panel ID="PBottom" runat="server" CssClass="PBottom">
+                    时雨书店管理系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 鸣谢：山东大学&nbsp;&nbsp;&nbsp;&nbsp; 浪潮优派&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </asp:Panel>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>

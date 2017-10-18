@@ -1,0 +1,135 @@
+﻿body {
+}
+/*搜索Panel*/
+.P_Search {
+    position: absolute;
+    top: 245px;
+    left: 330px;
+    width: 855px;
+    height: 60px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+/*搜索区：label*/
+.lbOID {
+    position: absolute;
+    top: 19px;
+    left: 48px;
+    width: 55px;
+}
+/*搜索区：输入框*/
+.TBSearch {
+    border: 2px solid #8deeee;
+    Font-Size: Medium;
+    Color: Black;
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+/*搜索区：button*/
+.SearchButton {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+}
+
+.AllOrder {
+    position: absolute;
+    top: 15px;
+    left: 650px;
+}
+
+.SearchButton, .AllOrder {
+    display: block;
+    font-weight: 500;
+    color: white;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+    .SearchButton:link, .AllOrder:link, .SearchButton:visited, .AllOrder:visited {
+        background-color: #5cacee;
+    }
+
+    .SearchButton:hover, .AllOrder:hover, .SearchButton:active, .AllOrder:active {
+        background-color: #3799ea;
+    }
+
+
+/*用户展示Panel*/
+.P_UserShow {
+    position: absolute;
+    top: 335px;
+    left: 330px;
+    width: 855px;
+    height: 644px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+/*用户展示区：gridview*/
+.GV_UserShow {
+    width: 835px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 2px;
+    border: 2px solid #87ceff;
+}
+
+.GV_Title1, .GV_Title2, .GV_Title3, .GV_Title4, .GV_Title5, .GV_Title6 {
+    background-color: #5cacee;
+    border: 2px solid #87ceff;
+    font-size: large;
+    color: white;
+    Height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.GV_Item1, .GV_Item2, .GV_Item3, .GV_Item4, .GV_Item5, .GV_Item6 {
+    background-color: white;
+    border: 2px solid #87ceff;
+    font-size: medium;
+    color: black;
+    text-align: left;
+}
+
+.GV_Title1, .GV_Item1, .GV_Title2, .GV_Item2, .GV_Title3, .GV_Item3, .GV_Title4, .GV_Item4 {
+    width: 162px;
+}
+
+.GV_Title5, .GV_Item5 {
+    width: 60px;
+}
+
+/*用户展示区：限制与解除button*/
+.LoginN, .LoginY {
+    display: block;
+    font-weight: 500;
+    color: white;
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 1px;
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+    .LoginN:link, .LoginY:link, .LoginN:visited, .LoginY:visited {
+        background-color: #84c0f2;
+    }
+
+    .LoginN:hover, .LoginY:hover, .LoginN:active, .LoginY:active {
+        background-color: #3799ea;
+    }

@@ -1,0 +1,657 @@
+﻿@keyframes Danru {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes Danru {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Danchu {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes Danchu {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    background-color: silver;
+}
+
+.table1 {
+    border-width: 0px;
+}
+
+.pnlTitle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1349px;
+    height: 40px;
+    background-color: #5CACEE;
+}
+
+.cmdFirstPage {
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    text-align: center;
+    background-color: #5CACEE;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Microsoft YaHei';
+    border-width: 0px;
+    color: white;
+}
+
+    .cmdFirstPage:hover, .cmdFirstPage:focus, .cmdFirstPage:active {
+        background-color: #8DEEEE;
+        font-weight: 900;
+    }
+
+.lblUserName {
+    position: absolute;
+    left: 212px;
+    top: 0px;
+    height: 40px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.lblNameInput {
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    height: 40px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.lkbUserOperation {
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+#lkbShoppingCart {
+    left: 410px;
+}
+
+#lkbUserOrder {
+    left: 500px;
+}
+
+.lkbUserOperation:hover {
+    color: blue;
+    font-size: 1em;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+
+.lkbQuit {
+    border-radius: 5px;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    width: 67px;
+    height: 30px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+    .lkbQuit:hover, .lkbQuit:focus {
+        background-color: #8DEEEE;
+        font-weight: 900;
+    }
+
+.lkbRegister {
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 67px;
+    height: 30px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+    .lkbRegister:hover, .lkbRegister:focus {
+        background-color: #8DEEEE;
+        font-weight: 900;
+    }
+
+#cmdLogin {
+    color: white;
+    border-width: 0px;
+    background-color: #5CACEE;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 170px;
+    width: 67px;
+    height: 40px;
+    font-size: 1em;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    text-align: center;
+}
+    /*.lkbRegister{
+    color:white;
+    border-width:0px;
+    background-color:#5CACEE;
+    border-radius:5px;
+    position:absolute;
+    top:0px;
+    right:100px;
+    width:67px;
+    height:40px;
+    font-size:1em;
+    font-family:'Microsoft YaHei';
+    font-weight:700;
+    text-align:center;
+}*/
+    #cmdLogin:hover {
+        background-color: #8DEEEE;
+        font-weight: 900;
+    }
+
+        #cmdLogin:hover + #pnlLoginDown {
+            opacity: 1;
+            height: 374px;
+            top: 40px;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+
+.pnlLoginDown {
+    width: 383px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    top: -500px;
+    right: 170px;
+    background-image:url('../Image/登录背景.png');
+
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+    .pnlLoginDown:hover {
+        opacity: 1;
+        height: 374px;
+        top: 40px;
+    }
+
+.lblLoginFont {
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    font-size: 1em;
+    color: #5CACEE;
+}
+
+.txtLoginKuang {
+    border-radius: 8px;
+    border-color: #5CACEE;
+    background-color: white;
+    border-width: 2px;
+    width: 260px;
+    height: 25px;
+    padding-left: 8px;
+    padding-top: 2px;
+    text-align: left;
+    font-family: 'Microsoft YaHei';
+    font-size: 1em;
+}
+
+    .txtLoginKuang:hover {
+        color: white;
+        font-weight: 900;
+        border-color: #8DEEEE;
+        background-color: #8DEEEE;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+    }
+
+.cmdLoginNow {
+    border-radius: 8px;
+    border-color: #f4830e;
+    border-style: solid;
+    border-width: 3px;
+    height: 40px;
+    width: 346px;
+    border-width: 0px;
+    color: white;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: #f4830e;
+}
+
+    .cmdLoginNow:hover {
+        border-color: #f4830e;
+        border-style: solid;
+        border-width: 3px;
+        background-color: white;
+        color: #f4830e;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+    }
+
+.lkbForPwd {
+    color: grey;
+    font-size: 0.7em;
+}
+
+    .lkbForPwd:hover {
+        color: #5CACEE;
+        font-size: 0.9em;
+    }
+    .lblLoginState{
+    font-family:'Microsoft YaHei';
+    font-size:1.2em;
+    font-weight:500;
+    text-align:center;
+    color:#ff0000;
+    width:300px;
+}
+.pnlLogo {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 1349px;
+    height: 200px;
+    background-color: white;
+    background-image: url('../Image/题头demo1.jpg');
+}
+
+.imgLogo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 200px;
+    background-color: silver;
+}
+
+.pnlSearch {
+    position: absolute;
+    left: 310px;
+    top: 20px;
+    width: 540px;
+    height: 35px;
+}
+/*.pnlSearch1{
+    transform:translate(310px,20px);
+    -webkit-transform:translate(310px,20px);
+    transition:all 2s;
+    -webkit-transition:all 2s;
+}*/
+/*.pnlSearch2{
+    transform:translate(310px,60px);
+    -webkit-transform:translate(310px,60px);
+    transition:all 2s;
+    -webkit-transition:all 2s;
+}*/
+
+.txtSearch {
+    border-radius: 8px;
+    border-image:none;
+    -webkit-border-image:none;
+    border-color: #5CACEE;
+    background-color: white;
+    border-width: 4px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 25px;
+    padding-left: 8px;
+    padding-top: 2px;
+    text-align: left;
+    font-family: 'Microsoft YaHei';
+    font-size: 1em;
+    background-image: url('../Images/sousuo.png');
+    background-repeat: no-repeat;
+}
+
+    .txtSearch:hover, .txtSearch:focus, .txtSearch:active {
+        border-radius: 8px;
+        border-image:none;
+    -webkit-border-image:none;
+        color: white;
+        font-weight: 900;
+        border-color: #8DEEEE;
+        background-color: #8DEEEE;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+    }
+
+.cmdSearch {
+    position: absolute;
+    top: 0px;
+    left: 419px;
+    height: 30px;
+    width: 60px;
+    padding-top: 6px;
+    border-width: 0px;
+    border-radius: 5px;
+    font-family: 'Microsoft YaHei';
+    color: white;
+    text-align: center;
+    text-decoration-style: double;
+    font-weight: 700;
+    background-color: #5CACEE;
+    font-size: 1em;
+}
+
+    .cmdSearch:hover, .cmdSearch:focus, #cmdGSearch:hover, #cmdGSearch:focus {
+        font-weight: 900;
+        color: white;
+        background-color: #8DEEEE;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+    }
+
+#cmdGSearch, #cmdGSearch:visited {
+    position: absolute;
+    top: 0px;
+    left: 484px;
+    height: 35px;
+    width: 80px;
+    padding-top: 0px;
+    border-width: 0px;
+    border-radius: 5px;
+    font-family: 'Microsoft YaHei';
+    color: white;
+    text-align: center;
+    text-decoration-style: double;
+    font-weight: 700;
+    background-color: #5CACEE;
+    color: white;
+    font-size: 1em;
+}
+
+.imgSome {
+    position: absolute;
+    top: 0px;
+    left: 880px;
+    height: 200px;
+    width: 400px;
+}
+
+.pnlGSearch {
+    position: absolute;
+    top: -300px;
+    height: 175px;
+    left: 0px;
+    width: 530px;
+}
+
+    .pnlGSearch:hover {
+        top: 20px;
+    }
+
+#cmdGSearch:hover + #pnlGSearch {
+    /*animation:Danru 1s;
+    -webkit-animation:Danru 2s;*/
+    top: 20px;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+}
+
+#cmdGSearch:visited + #pnlGSearch {
+    top: -300px;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+}
+/*.pnlGSearch1{
+    position:absolute;
+    top:55px;
+    height:140px;
+    left:310px;
+    width:530px;
+    animation:Danru 1s;
+    -webkit-animation:Danru 1s;
+}
+.pnlGSearch2{
+    position:absolute;
+    top:55px;
+    height:140px;
+    left:310px;
+    width:530px;
+    animation:Danchu 5s;
+    -webkit-animation:Danchu 5s;
+}*/
+.lblBookS0, .lblBookS1, .lblBookS2, .lblBookS3 {
+    font-family: 'Microsoft YaHei';
+    font-size: 1em;
+    color: black;
+    height: 20px;
+    padding-bottom: 1px;
+}
+
+.lblBookS0 {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+
+.lblBookS1 {
+    position: absolute;
+    top: 55px;
+    left: 257px;
+}
+
+.lblBookS2 {
+    position: absolute;
+    top: 95px;
+    left: 10px;
+}
+
+.lblBookS3 {
+    position: absolute;
+    top: 95px;
+    left: 257px;
+}
+
+.txtBookS0, .txtBookS1, .txtBookS2, .txtBookS3 {
+    border-image:none;
+    -webkit-border-image:none;
+    font-family: 'Microsoft YaHei';
+    font-size: 1em;
+    color: black;
+    height: 20px;
+    padding-bottom: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: #5CACEE;
+    background-color: white;
+    padding-bottom: 1px;
+    padding-left: 10px;
+}
+
+    .txtBookS0:hover, .txtBookS0:focus, .txtBookS1:hover, txtBookS1:visited, .txtBookS2:hover, .txtBookS2:visited, .txtBookS3:hover, .txtBookS3:visited {
+        color: white;
+        background-color: #8DEEEE;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+    }
+
+.txtBookS0 {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+}
+
+.txtBookS1 {
+    position: absolute;
+    top: 55px;
+    left: 303px;
+    width: 217px;
+}
+
+.txtBookS2 {
+    position: absolute;
+    top: 95px;
+    left: 60px;
+}
+
+.txtBookS3 {
+    position: absolute;
+    top: 95px;
+    left: 320px;
+    width: 200px;
+}
+
+.lkbGStart {
+    width: 80px;
+    position: absolute;
+    top: 135px;
+    height: 26px;
+    padding-top: 2px;
+    border-width: 0px;
+    border-radius: 5px;
+    font-family: 'Microsoft YaHei';
+    color: white;
+    text-align: center;
+    text-decoration-style: double;
+    font-weight: 700;
+    background-color: #5CACEE;
+}
+
+.lkbGStart {
+    left: 400px;
+}
+
+    .lkbGStart:hover, .lkbGStart:focus {
+        font-weight: 900;
+        color: white;
+        background-color: #8DEEEE;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+    }
+
+.divFooter{
+    width:100%;
+    height:90px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    background-color:#ffffff;
+    border-radius:2px;
+    z-index:998;
+}
+.lblFooterLine0{
+    width:100%;
+    background-color:#5cacee;
+    height:5px;
+    position:absolute;
+    left:0%;
+    top:3px;
+}
+.pnlFooterButtton{
+    width:100%;
+    height:20px;
+}
+.tbFooter{
+    text-align:center;
+    width:585px;
+    height:20px;
+    position:absolute;
+    left:28%;
+}
+.lkbFooter,.lblFooter{
+    font-family:'Microsoft YaHei';
+    font-size:1em;
+    font-weight:400;
+    color:#5cacee;
+    width:80px;
+
+}
+.lkbFooter:hover{
+    color:blue;
+}
+.lblFooterLine1{
+    height:3px;
+    background-color:grey;
+    position:absolute;
+    left:15%;
+    /*top:30px;*/
+    width:70%;
+}
+.lblAnnounce{
+    position:absolute;
+    left:40%;
+    height:16px;
+}

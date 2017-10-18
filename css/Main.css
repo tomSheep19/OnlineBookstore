@@ -1,0 +1,370 @@
+﻿body {
+    background-color:white;
+    height:2350px;
+}
+.PCategory{
+    position:absolute;
+    top:60px;
+    left:5px;
+    width:215px;
+    height:560px;
+}
+.CateButton{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+width:170px;
+height:80px;
+line-height:80px;
+border-radius:5px;
+padding:4px;
+margin:4px;
+text-align:center;
+text-decoration:none;
+font-size:x-large;
+font-family:'微软雅黑','楷体';
+transition: width 0.5s,height 0.5s;
+}
+.CateButton:link,.CateButton:visited
+{
+background-color:#5cacee;
+
+}
+.CateButton:hover,.CateButton:active
+{
+background-color:#8DEEEE;
+width:200px;
+height:85px;
+}
+.lblBookRecommend{
+    padding-top:8px;
+    padding-left:50px;
+    border-radius:5px;
+    width:907px;
+    height:60px;
+    text-align:left;
+    background-color:#5cacee;
+    border-width:0px;
+    font-size:2em;
+    font-family:'Microsoft YaHei';
+    color:white;
+    font-weight:700;
+    position:absolute;
+    left:8px;
+    top:620px;
+}
+.pnlBookNew {
+    border-radius:5px;
+    position: absolute;
+    left: 980px;
+    top: 60px;
+    width: 370px;
+    background-color:white;
+    height:1980px;
+}
+
+.lblBookNew{
+    padding-top:8px;
+    padding-left:10px;
+    border-radius:5px;
+    width:360px;
+    height:60px;
+    text-align:left;
+    background-color:#5cacee;
+    border-width:0px;
+    font-size:2em;
+    font-family:'Microsoft YaHei';
+    color:white;
+    font-weight:700;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.imgBookNew0,.imgBookNew1,.imgBookNew2,.imgBookNew0:visited,.imgBookNew1:visited,.imgBookNew2:visited,.imgBookNew3,.imgBookNew4,.imgBookNew5,.imgBookNew3:visited,.imgBookNew4:visited,.imgBookNew5:visited,.imgBookNew6,.imgBookNew6:visited{
+    /*position:absolute;
+    left:0px;*/
+    width:147px;
+    height:210px;
+    border-width:2px;
+    border-color:black;
+    margin:10px;
+}
+
+/*.imgBookNew0{
+    top:70px;
+}
+.imgBookNew1{
+    top:350px;
+}
+.imgBookNew2{
+    top:630px;
+}
+.imgBookNew3{
+    top:910px;
+}
+.imgBookNew4{
+    top:1190px;
+}
+.imgBookNew5{
+    top:1470px;
+}
+.imgBookNew6{
+    top:1750px;
+}*/
+
+.imgBookNew0:hover,.imgBookNew1:hover,.imgBookNew2:hover,.imgBookNew3:hover,.imgBookNew4:hover,.imgBookNew5:hover,.imgBookNew6:hover{
+    margin-left:6.5px;
+    margin-right:6.5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:154px;
+    height:220px;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.pnlBookNewImg{
+    width:167px;
+    height:230px;
+}
+.lkbBookName,.lkbBookName:visited,.lkbBookName0,.lkbBookName1,.lkbBookName2,.lkbBookName4,.lkbBookName4,.lkbBookName5,.lkbBookName6{
+    height:28px;
+    text-align:left;
+    font-weight:600;
+    font-family:'Microsoft YaHei';
+    font-size:1em;
+    color:black;
+}
+/*.lkbBookName0,.lkbBookName1,.lkbBookName2,.lkbBookName3,.lkbBookName4,.lkbBookName5,.lkbBookName6{
+    position:absolute;
+    left:215px;
+        
+}
+.lkbBookName0{
+    top:130px;
+}
+.lkbBookName1{
+    top:410px;
+}
+.lkbBookName2{
+    top:690px;
+}
+.lkbBookName3{
+    top:970px;
+}
+.lkbBookName4{
+    top:1250px;
+}
+.lkbBookName5{
+    top:1530px;
+}
+.lkbBookName6{
+    top:1810px;
+}
+.lblAuthorName00,.lblAuthorName10,.lblAuthorName20,.lblAuthorName30,.lblAuthorName40,.lblAuthorName50,.lblAuthorName60{
+    position:absolute;
+    left:215px;
+}
+.lblAuthorName00,.lblAuthorName01{
+    top:165px;
+}
+.lblAuthorName10,.lblAuthorName11{
+    top:445px;
+}
+.lblAuthorName20,.lblAuthorName21{
+    top:725px;
+}
+.lblAuthorName30, .lblAuthorName31 {
+    top:1005px;
+}
+.lblAuthorName40, .lblAuthorName41 {
+    top:1285px;
+}
+.lblAuthorName50, .lblAuthorName51 {
+    top:1565px;
+}
+.lblAuthorName60, .lblAuthorName61 {
+    top:1845px;
+}
+.lblAuthorName01,.lblAuthorName11,.lblAuthorName21,.lblAuthorName31,.lblAuthorName41,.lblAuthorName51,.lblAuthorName61{
+    position:absolute;
+    left:235px;
+}
+.cmdBookOperation00,.cmdBookOperation10,.cmdBookOperation20,.cmdBookOperation01,.cmdBookOperation11,.cmdBookOperation21,.cmdBookOperation30,.cmdBookOperation40,.cmdBookOperation50,.cmdBookOperation31,.cmdBookOperation41,.cmdBookOperation51,.cmdBookOperation60,.cmdBookOperation61{
+    position:absolute;
+    left:235px;
+}
+.cmdBookOperation00{
+    top:225px;
+}
+.cmdBookOperation01{
+    top:265px;
+}
+.cmdBookOperation10{
+    top:505px;
+}
+.cmdBookOperation11{
+    top:545px;
+}
+.cmdBookOperation20{
+    top:785px;
+}
+.cmdBookOperation21{
+    top:825px;
+}
+.cmdBookOperation30{
+    top:1065px;
+}
+.cmdBookOperation31{
+    top:1105px;
+}
+.cmdBookOperation40{
+   top:1340px;
+}
+.cmdBookOperation41{
+    top:1380px;
+}
+.cmdBookOperation50{
+    top:1620px;
+}
+.cmdBookOperation51{
+    top:1660px;
+}
+.cmdBookOperation60{
+    top:1900px;
+}
+.cmdBookOperation61{
+    top:1940px;
+}*/
+
+.pnlBookRecommend{
+    border-radius:5px;
+    border-width:0px;
+    background-color:white;
+    width:956px;
+    height:1330px;
+    position:absolute;
+    left:8px;
+    top:710px;
+}
+.pnlBookR{
+    width:235px;
+    height:430px;
+
+}
+.pnlBookRImg{
+    width:235px;
+    height:314px;
+}
+.imgBookR,.imgBookR:visited{
+    width:210px;
+    height:300px;
+    margin-left:12.5px;
+    margin-right:12.5px;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.imgBookR:hover{
+    margin-left:4.5px;
+    margin-right:4.5px;
+    margin-top:2px;
+    margin-bottom:2px;
+    width:217px;
+    height:310px;
+    
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+.tdimgBookR{
+    height:315px;
+}
+.lkbBookName,.lkbBookName:visited,.lkbBookName0,.lkbBookName1,.lkbBookName2,.lkbBookName3,.lkbBookName4,.lkbBookName5,.lkbBookName6{
+    height:22px;
+    text-align:left;
+    font-weight:500;
+    font-family:'Microsoft YaHei';
+    font-size:0.9em;
+    color:black;
+}
+.tdlkbBookName{
+    height:19px;
+}
+.lkbBookName:hover,.lkbBookName0:hover,.lkbBookName1:hover,.lkbBookName2:hover,.lkbBookName3:hover,.lkbBookName4:hover,.lkbBookName5:hover,.lkbBookName6:hover{
+    width:225px;
+    font-size:1.2em;
+    font-weight:600;
+    color:#5cacee;
+    font-weight:600;
+    transition:all .4s;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -o-transition:all .4s;
+}
+.pnlBookNewLkbName{
+    height:20px;
+    width:230px;
+}
+.lblAuthorName,.lblAuthorName00,.lblAuthorName01,.lblAuthorName10,.lblAuthorName11,.lblAuthorName20,.lblAuthorName21,.lblAuthorName30,.lblAuthorName31,.lblAuthorName40,.lblAuthorName41,.lblAuthorName50,.lblAuthorName51,.lblAuthorName60,.lblAuthorName61{
+    text-align:left;
+    height:15px;
+    font-family:'Microsoft YaHei';
+    font-weight:400;
+    font-size:0.8em;
+    color:grey;
+}
+.tdlblAuthorName{
+    height:15px;
+}
+.cmdBookOperation,.cmdBookOperation00,.cmdBookOperation01,.cmdBookOperation10,.cmdBookOperation11,.cmdBookOperation20,.cmdBookOperation21,.cmdBookOperation30,.cmdBookOperation31,.cmdBookOperation40,.cmdBookOperation41,.cmdBookOperation50,.cmdBookOperation51,.cmdBookOperation60,.cmdBookOperation61{
+    border-radius:5px;
+    border-style:solid;
+    height:25px;
+    width:90px;
+    border-width:0px;
+    color:white;
+    font-family:'Microsoft YaHei';
+    font-weight:700;
+    font-size:1em;
+    background-color:#f4830e;
+    icon:url('../Images/登录.png');
+}
+.tdcmdBookOperation{
+    height:25px;
+}
+.pnlBookOperation0{
+    height:60px;
+}
+.cmdBookOperation:hover,.cmdBookOperation00:hover,.cmdBookOperation01:hover,.cmdBookOperation10:hover,.cmdBookOperation11:hover,.cmdBookOperation20:hover,.cmdBookOperation21:hover,.cmdBookOperation30:hover,.cmdBookOperation31:hover,.cmdBookOperation40:hover,.cmdBookOperation41:hover,.cmdBookOperation50:hover,.cmdBookOperation51:hover,.cmdBookOperation60:hover,.cmdBookOperation61:hover{
+        border-color: #f4830e;
+        border-style: solid;
+        border-width: 2px;
+        background-color: white;
+        color: #f4830e;
+        transition: all .7s;
+        -webkit-transition: all .7s;
+    }
+.cmdPagerApart{
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    background-color:white;
+    border-width:0px;
+}
+.cmdPagerApart:hover{
+    background-color:#ff6a00;
+}
+.lblBookPrice,.lblBookPrice0{
+    font-family:'Microsoft YaHei';
+    font-size:1em;
+    font-weight:400;
+    color:#ff6a00;
+    height:16px;
+}
+/*.lblBookPrice{
+    position:absolute;
+    right:5px;
+}*/
+

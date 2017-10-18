@@ -1,0 +1,275 @@
+﻿body {
+}
+/*搜索Panel*/
+.P_Search {
+    position: absolute;
+    top: 245px;
+    left: 330px;
+    width: 855px;
+    height: 135px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+    float: left;
+}
+/*书籍展示Panel*/
+.P_BookShow {
+    position: absolute;
+    top: 400px;
+    left: 330px;
+    width: 855px;
+    height: 1000px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+
+/*搜索区主搜索框*/
+.TextBInputSearch {
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    border: 1px solid #5cacee;
+}
+
+
+
+/*搜索区button*/
+.BSearch, .BAdd, .BAnnouncement, .BHidden {
+    float: left;
+    display: block;
+    font-weight: 600;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-family: '微软雅黑','楷体';
+    border-radius: 3px;
+}
+
+    .BSearch:link, .BAdd:link, .BAnnouncement:link, .BHidden:link, .BSearch:visited, .BAdd:visited, .BAnnouncement:visited, .BHidden:visited {
+        background-color: #5cacee;
+        color: white;
+    }
+
+    .BSearch:hover, .BAdd:hover, .BAnnouncement:hover, .BSearch:active, .BAdd:active, .BAnnouncement:active, .BHidden:hover, .BHidden:active {
+        background-color: #3599ea;
+        color: white;
+    }
+
+
+.BSearch {
+    position: absolute;
+    top: 5px;
+    left: 300px;
+}
+
+.BConSearch {
+    position: absolute;
+    top: 4px;
+    left: 420px;
+    float: left;
+    display: block;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+    line-height: 25px;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-family: '微软雅黑','楷体';
+    border-radius: 3px;
+    background-color: #5cacee;
+    color: white;
+}
+
+    .BConSearch:hover, .BConSearch:active {
+        background-color: #3599ea;
+    }
+
+        .BConSearch:hover + .PanelConSearch {
+            top: 10px;
+            z-index: 2;
+            transition: all 1s ease-in 0s;
+            -webkit-transition: all 1s ease-in 0s;
+            -moz-transition: all 1s ease-in 0s;
+        }
+
+.BAdd {
+    position: absolute;
+    top: 5px;
+    left: 660px;
+}
+
+.BAnnouncement {
+    position: absolute;
+    top: 5px;
+    left: 710px;
+}
+
+/*高级搜索Panel*/
+.PanelConSearch {
+    width: 700px;
+    height: 120px;
+    position: absolute;
+    top: -520px;
+    left: 80px;
+    background-color: transparent;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+    .PanelConSearch:hover {
+        top: 10px;
+    }
+
+/*高级搜索区：Label textbox dropdownlist*/
+.LID, .LC {
+    position: relative;
+    top: 46px;
+}
+
+.LA, .LP {
+    position: relative;
+    top: 48px;
+}
+
+.TBID,.TBC {
+    width: 186px;
+    height: 20px;
+    position: relative;
+    top: 46px;
+    border: 1px solid #5cacee;
+}
+
+.TBA, .TBP {
+    width: 186px;
+    height: 20px;
+    position: relative;
+    top: 48px;
+    border: 1px solid #5cacee;
+}
+
+.ListBConCategory {
+    height: 26px;
+    Width: 190px;
+    position: relative;
+    top: 46px;
+    border: 1px solid #5cacee;
+    z-index:0;
+}
+/*高级搜索区：搜索button*/
+.BHidden {
+    position: absolute;
+    top: 72px;
+    left: 560px;
+}
+
+/*书籍展示区gridview*/
+.GV_BookShow {
+    width: 825px;
+    height: 820px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    background-color: white;
+}
+/*书籍展示：Item表格*/
+.ShowTable {
+    width: 790px;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 2px;
+    border: 4px solid white;
+    position: relative;
+    left: 4px;
+    Font-Size: Medium;
+}
+
+    .ShowTable:hover, .ShowTable:active {
+        border: 4px solid #FFEFDB;
+    }
+/*书籍展示：封面单元格*/
+.TableCover {
+    width: 135px;
+    height: 146px;
+}
+/*书籍展示：封面img*/
+.TCoverImg {
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    width: 91px;
+    height: 130px;
+}
+/*书籍展示：书名*/
+.BookLink:link, .BookLink:visited {
+    color: #436eee;
+    text-decoration: none;
+}
+
+.BookLink:hover, .BookLink:active {
+    color: #5cacee;
+    text-decoration: underline;
+}
+
+
+/*书籍展示：单元格宽度*/
+.TableTd1 {
+    width: 70px;
+}
+
+.TableTd2 {
+    width: 180px;
+}
+
+.TableTd3 {
+    width: 200px;
+}
+
+.TableTd4 {
+    width: 135px;
+}
+
+/*书籍展示：button*/
+.TableButton {
+    display: block;
+    font-weight: 500;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    font-family: '微软雅黑','楷体';
+    border-radius: 15px;
+}
+
+    .TableButton:link, .TableButton:visited {
+        border: 1px solid #436eee;
+        color: #436eee;
+        background-color: white;
+    }
+
+    .TableButton:hover, .TableButton:active {
+        border: 1px solid red;
+        color: red;
+        background-color: white;
+    }
+
+#lbAlter {
+    position: absolute;
+    top: 30px;
+}
+
+#lbDelete {
+    position: absolute;
+    top: 80px;
+}

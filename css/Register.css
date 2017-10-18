@@ -1,0 +1,150 @@
+﻿      
+        .Panel {
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+            left: 700px;
+            z-index: 1;
+            border:0px ;
+            border: 1px solid;
+            border-radius: 15px;
+            border-color:#FFFFFF;
+            background-color:rgba(242, 236, 236, 0.12)
+          
+        }
+        .Image_Logo {
+            position: absolute;
+            top: 31px;
+            left: 10px;
+            z-index: 1;
+            width: 274px;
+            height: 131px;
+        }
+        .Label_Login {
+            position: absolute;
+            top: 75px;
+            left: 287px;
+            z-index: 1;
+            width: 162px;
+            height: 58px;
+            
+        }
+        .Table {
+            width: 100%;
+            height: 310px;
+            top:5px;
+            left:20px;
+            z-index:2;
+            
+           
+
+        }
+        .Td {
+            width: 100px;
+            font-family:"微软雅黑";
+            color:#FFFFFF;            
+          
+        }
+
+        .Td1 {
+            width: 64px;
+        }
+
+        .TextBox_Username {
+            /*position: absolute;
+            top: 50px;
+            left: 185px;*/
+            width: 200px;
+            height: 15px;
+            z-index: 1;
+            border: 1px solid;
+            border-radius: 15px;
+            border-color:#FFFFFF;
+        }
+
+        .DropDownList_Sex{
+            /*position: absolute;
+            top: 95px;
+            left: 185px;*/
+            width:200px;
+            height:20px;
+            border: 1px solid;
+            border-radius: 15px;
+             border-color:#FFFFFF;
+        }
+
+        .TextBox_Password{
+            /*position: absolute;
+            top: 140px;
+            left: 185px;*/
+             width:200px;
+            height:15px;
+            border: 1px solid;
+            border-radius: 15px;
+            border-color:#FFFFFF;
+           
+        }
+        .TextBox_AffirmPassword {
+            /*position: absolute;
+            top: 185px;
+            left: 185px;*/
+             width:200px;
+            height:15px;
+            border: 1px solid;
+            border-radius: 15px;
+             border-color:#FFFFFF;
+        }
+        .TextBox_SafeQuestion {
+            /*position: absolute;
+            top: 230px;
+            left: 185px;*/
+             width:200px;
+            height:15px;
+            border: 1px solid;
+            border-radius: 15px;
+             border-color:#FFFFFF;
+        }
+       
+       
+        .TextBox_Answer {
+            /*position: absolute;
+            top: 280px;
+            left: 185px;*/
+             width:200px;
+            height:15px;
+            border: 1px solid;
+            border-radius: 15px;
+             border-color:#FFFFFF;
+        }
+      
+         .Button_Login {
+            position: absolute;
+            top: 330px;
+            left: 380px;
+            z-index: 1;
+            border: 1px solid;
+            border-radius: 15px;
+            display: block;
+            font-weight: bold;
+            color: #5cacee;
+            width: 100px;
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+            text-decoration: none;
+            font-size: large;
+            font-family: '微软雅黑','楷体';
+            height: 40px;
+            line-height:40px;
+        }
+         
+        
+           .Button_Login:link, .Button_Login:visited {
+                background-color:#FFFFFF;
+        }
+
+           .Button_Login:hover, .Button_Login:active {
+               background-color: #808080;
+       
+        }

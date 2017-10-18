@@ -1,0 +1,344 @@
+﻿.body{
+    background-color:#FFFFFF;
+    height:2400px;
+}
+.Panel_Show {
+    width: 1100px;
+    height: 436px;
+    position: absolute;
+    top: 840px;
+    left: 120px;
+    z-index: 1;
+    background-color:rgba(246, 241, 241, 0.60);
+    border:1px groove;
+    border-radius: 10px;
+    border-color:#5cacee
+}
+
+.GridView1 {
+   width:1100px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    z-index: 2;
+    margin: 0px;
+}
+
+.Label_Name {
+    /*position: absolute;
+    top: 30px;
+    left: 50px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    font-family: "仿宋";
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.ImageButton_Pictrue {
+    /*position: absolute;
+    top: 70px;
+    left: 20px;*/
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+}
+
+.LinkButton_Name {
+    /*position: absolute;
+    top: 100px;
+    left: 200px;*/
+    z-index: 1;
+    margin-bottom: 0px;
+}
+
+    .LinkButton_Name:link, .LinkButton_Name:visited {
+        color: #000000;
+    }
+
+    .LinkButton_Name:hover, .LinkButton_Name:active {
+        color: #5cacee;
+    }
+
+
+.Label_SinglePrice {
+    /*position: absolute;
+    top: 30px;
+    left: 350px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    font-family: "仿宋";
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.Label_SinglePrice1 {
+    /*position: absolute;
+    top: 150px;
+    left: 350px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.Label_SingleAmount {
+    /*position: absolute;
+    top: 30px;
+    left: 550px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    font-family: "仿宋";
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.Label_Price {
+    /*position: absolute;
+    top: 114px;
+    left: 134px;*/
+    z-index: 1;
+}
+
+.Label_Amount {
+    /*position: absolute;
+    top: 90px;
+    left: 85px;*/
+    z-index: 1;
+}
+
+.TextBox_SingleAmount {
+    /*position: absolute;
+    top: 150px;
+    left: 85px;*/
+    z-index: 1;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+.TextBox_Province{
+    position: absolute;
+    top:13px;
+    left:140px;
+    width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+
+.Textbox_City{
+    position: absolute;
+    top:50px;
+    left:140px;
+    width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+
+.Textbox_Area{
+    position: absolute;
+    top:92px;
+    left:140px;
+    width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+
+
+
+.TextBox_Postcode{
+    /*position: absolute;
+    top:185px;
+    left:118px;*/
+     width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+
+.TextBox_Name{
+    /*position: absolute;
+    top:220px;
+    left:118px;*/
+    z-index: 1;
+    width:100px;
+    height:20px;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color:#5cacee;
+}
+
+.TextBox_Phonenumber{
+    /*position: absolute;
+    top:255px;
+    left:118px;*/
+    width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+.TextBox_Remark{
+     /*position: absolute;
+    top:290px;
+    left:118px;*/
+    width:100px;
+    height:20px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #5cacee;
+}
+
+.Label_Discount {
+    position: absolute;
+    top: 30px;
+    left: 750px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    font-family: "微软雅黑";
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.DropDownList_Discount {
+    /*position: absolute;
+    width: 100px;
+    top: 150px;*/
+    left: 750px;
+    z-index: 1;
+    border: 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+.Label_BriefSummary {
+    /*position: absolute;
+    top: 30px;
+    left: 950px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    font-family: "微软雅黑";
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.Label_BriefSummary1 {
+    /*position: absolute;
+    top: 150px;
+    left: 950px;*/
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.Label_Money {
+    position: absolute;
+    top: 1600px;
+    left: 900px;
+    z-index: 2;
+    width: 125px;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+}
+
+.Label_RealMoney {
+    position: absolute;
+    top: 1600px;
+    left: 700px;
+    z-index: 1;
+    font-family: "微软雅黑";
+    font-size: x-large;
+}
+
+.Panel_UserMessage {
+    width: 700px;
+    height: 377px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    z-index: 1;
+    background-color:rgba(246, 241, 241, 0.60);
+    border :1px groove;
+    border-radius: 10px;
+    border-color:#5cacee
+}
+
+.Table {
+    width: 651px;
+    height: 314px;
+    text-align:left;
+}
+
+.Td {
+    width: 92px;
+    font-family: "微软雅黑";
+}
+
+.Button_SaveMessage {
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    z-index: 2;
+    border: 1px solid;
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+    color: #5cacee;
+    width: 100px;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: large;
+    font-family: "微软雅黑";
+    height: 40px;
+    line-height: 40px;
+}
+
+    .Button_SaveMessage:link, .Button_SaveMessage:visited {
+        background-color: #FFFFFF;
+    }
+
+    .Button_SaveMessage:hover, .Button_SaveMessage:active {
+        background-color: #808080;
+    }
+
+
+.Label_Address {
+    position: absolute;
+    top: 800px;
+    left: 120px;
+    z-index: 1;
+    width: 150px;
+    height: 40px;
+    font-family: "微软雅黑";
+    font-size: x-large;
+    text-align: left;
+    line-height: 40px;
+}

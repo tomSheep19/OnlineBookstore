@@ -1,0 +1,193 @@
+﻿
+body {
+    font-family: '微软雅黑','楷体';
+    background-image: url(/Image/BodyBack_Short.jpg);
+    background-size: 100% 100%;
+    width: 1344px;
+    height: 1005px;
+}
+/*底层Panel,取白色*/
+.PBack {
+    position: absolute;
+    top: 0px;
+    left: 67px;
+    width: 1210px;
+    height: 1010px;
+    background-color: white;
+}
+/*系统标题Panel*/
+.P_Title {
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    background-image: url(/Image/SystemTitle.png);
+    float: left;
+    width: 1162px;
+    height: 220px;
+    border-radius: 5px;
+}
+/*标题Label：管理员用户名*/
+.TLabel {
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    font-family: '微软雅黑','楷体';
+}
+/*标题button：首页&退出*/
+.TButton {
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    font-family: '微软雅黑','楷体';
+}
+
+
+    .TButton:hover, .TButton:active {
+        color: #F5FFFA;
+    }
+
+
+/*左侧栏Panel*/
+.p_Left {
+    position: absolute;
+    top: 245px;
+    left: 24px;
+    width: 280px;
+    height: 734px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+/*左侧栏—主功能Panel*/
+.P_Function {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 240px;
+    height: 320px;
+    z-index: 2;
+}
+/*左侧栏—主功能button*/
+.FunctionButton {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 200px;
+    height: 85px;
+    line-height: 85px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: '微软雅黑','楷体';
+    transition: width 0.5s,height 0.5s;
+}
+
+#lbOrderManage:link, #lbOrderManage:visited {
+    /*background-color: #ffcc99;*/
+    background-color: #ffc488;
+}
+
+#lbOrderManage:hover, #lbOrderManage:active {
+    /*background-color: #ff9c53;*/
+    background-color: #ff9d3c;
+    width: 220px;
+    height: 105px;
+    line-height: 105px;
+}
+
+#lbUserManage:link, #lbUserManage:visited {
+    background-color: #FF8C69;
+}
+
+#lbUserManage:hover, #lbUserManage:active {
+    background-color: #FF6347;
+    width: 220px;
+    height: 105px;
+    line-height: 105px;
+}
+
+#lbBookManage:link, #lbBookManage:visited {
+    background-color: #7bcaff;
+}
+
+#lbBookManage:hover, #lbBookManage:active {
+    background-color: #5cacee;
+    width: 220px;
+    height: 105px;
+    line-height: 105px;
+}
+
+
+FunctionButton:link, FunctionButton:visited {
+    background-color: #5cacee;
+}
+
+FunctionButton:hover, FunctionButton:active {
+    background-color: #5cacee;
+    width: 220px;
+    height: 105px;
+    line-height: 105px;
+}
+/*左侧栏—书籍管理下的分类Panel*/
+.P_BookCategory {
+    position: absolute;
+    top: 317px;
+    left: 50px;
+    width: 172px;
+    height: 414px;
+    border-top: 2px solid #5cacee;
+    z-index: 1;
+}
+
+/*左侧栏—书籍管理下的分类button*/
+.MCateButton {
+    position: relative;
+    top: 2px;
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: '微软雅黑','楷体';
+    transition: width 0.5s,height 0.5s;
+}
+
+    .MCateButton:link, .MCateButton:visited {
+        background-color: #5cacee;
+    }
+
+    .MCateButton:hover, .MCateButton:active {
+        /*background-color: #8DEEEE;*/
+        background-color: #92c8f3;
+        width: 180px;
+    }
+/*底部Panel*/
+.PBottom {
+    position: absolute;
+    left: 0px;
+    top: 1000px;
+    width: 100%;
+    height: 22px;
+    border-radius: 2px;
+    background-color: #4ca3be;
+    color: white;
+    text-align: right;
+}

@@ -1,0 +1,188 @@
+﻿body {
+}
+/*搜索Panel*/
+.P_Search {
+    position: absolute;
+    top: 245px;
+    left: 330px;
+    width: 855px;
+    height: 40px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+
+.lbOID {
+    position: absolute;
+    top: 8px;
+    left: 46px;
+}
+/*搜索区：搜索框*/
+.TBSearch {
+    border: 2px solid #8deeee;
+    Font-Size: Medium;
+    Color: Black;
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+/*搜索区：button*/
+.SearchButton {
+    position: absolute;
+    top: 6px;
+    left: 320px;
+}
+
+.AllOrder {
+    position: absolute;
+    top: 6px;
+    left: 650px;
+}
+
+.SearchButton, .AllOrder {
+    display: block;
+    font-weight: 500;
+    color: white;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+    .SearchButton:link, .AllOrder:link, .SearchButton:visited, .AllOrder:visited {
+        background-color: #5cacee;
+    }
+
+    .SearchButton:hover, .AllOrder:hover, .SearchButton:active, .AllOrder:active {
+        background-color: #3799ea;
+    }
+
+
+/*订单展示Panel*/
+.P_OrderShow {
+    position: absolute;
+    top: 305px;
+    left: 330px;
+    width: 855px;
+    height: 400px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+
+/*订单详情Panel*/
+.P_OrderDetail {
+    position: absolute;
+    top: 740px;
+    left: 330px;
+    width: 855px;
+    height: 238px;
+    background-color: #F5FFFA;
+    border-radius: 5px;
+}
+
+/*订单展示区gridview*/
+.GV_OrderShow {
+    width: 835px;
+    height: 360px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 2px;
+    border: 2px solid #87ceff;
+}
+
+/*订单详情区gridview*/
+.GV_Detail {
+    width: 835px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    border-radius: 2px;
+    border: 2px solid #87ceff;
+}
+
+
+/*订单展示&订单详情单元*/
+.GV_Title1, .GV_Title2, .GV_Title3, .GV_Title4, .GV_Title5, .GV_Title6, .GV_DTitle1, .GV_DTitle2, .GV_DTitle3, .GV_DTitle4 {
+    background-color: #5cacee;
+    border: 2px solid #87ceff;
+    font-size: large;
+    color: white;
+    Height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.GV_Item1, .GV_Item2, .GV_Item3, .GV_Item4, .GV_Item5, .GV_Item6 .GV_DItem1, .GV_DItem2, .GV_DItem3, .GV_DItem4 {
+    background-color: white;
+    border: 2px solid #87ceff;
+    font-size: medium;
+    color: black;
+    text-align: left;
+}
+
+.GV_Title1, .GV_Item1 {
+    width: 140px;
+}
+
+.GV_Title2, .GV_Item2 {
+    width: 220px;
+}
+
+.GV_Title3, .GV_Item3 {
+    width: 160px;
+}
+
+.GV_Title4, .GV_Item4 {
+    width: 100px;
+}
+
+.GV_Title5, .GV_Item5 {
+    width: 100px;
+}
+
+.GV_DItem1 {
+    width: 150px;
+}
+
+
+.GV_DItem3 {
+    width: 70px;
+}
+
+.GV_DItem4 {
+    width: 70px;
+}
+
+/*选择button*/
+.ChooseButton {
+    position: relative;
+    top: 0px;
+    left: 2px;
+    display: block;
+    font-weight: 500;
+    color: white;
+    width: 78px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+    .ChooseButton:link, .ChooseButton:visited {
+        background-color: #5cacee;
+    }
+
+    .ChooseButton:hover, .ChooseButton:active {
+        background-color: #3799ea;
+    }
